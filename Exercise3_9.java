@@ -20,8 +20,7 @@ public class Exercise3_9 {
         //Create decimal format
         DecimalFormat decimalFormat = new DecimalFormat("00.00%");
 
-        int number, score, possiblePoints, totalPossiblePoints = 0,
-                percent = 0, totalScores = 0;
+        int number, score, possiblePoints, totalPossiblePoints = 0, totalScores = 0;
 
         //Input the number of exercises
         System.out.print("Number of Exercises: ");

@@ -12,15 +12,13 @@ possible) and output it using the DecimalFormat class.
  */
 
 public class Exercise3_9 {
-
-
     public static void main(String[] args) {
 
         //Create Scanner class
         Scanner input = new Scanner(System.in);
 
         //Create decimal format
-        DecimalFormat decimalFormat = new DecimalFormat("0.00%");
+        DecimalFormat decimalFormat = new DecimalFormat("00.00%");
 
         int number, score, possiblePoints, totalPossiblePoints = 0,
                 percent = 0, totalScores = 0;
@@ -35,21 +33,19 @@ public class Exercise3_9 {
             System.out.print("Score for exercise " + counter + ": ");
             score = input.nextInt();
 
-            //Total Possible Points
+            //Input the Possible Points
             System.out.print("Total points for exercise " + counter  + ": ");
             possiblePoints = input.nextInt();
 
             //Total
-            //Total Points for all exercises
+            //Total score for all exercises
             totalScores += score;
 
-            //total possible points from all exercises
+            //Total possible points from all exercises
             totalPossiblePoints += possiblePoints;
-
         }
         System.out.println("Your total is " + totalScores +
                 " out of " + totalPossiblePoints + ", or " +
                 decimalFormat.format((double)totalScores / totalPossiblePoints));
-
     }
 }
